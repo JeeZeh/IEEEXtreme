@@ -22,8 +22,6 @@ for i in range(n):
         string.append('y')
     else:
         string.append('Y')
-        
-
  
 def fuck_string(string, patt_freq):
     string_joined = "".join(string)
@@ -39,4 +37,50 @@ def fuck_string(string, patt_freq):
 for i in range(18,1, -1):
     string = fuck_string(string, i)
 
-print("".join(string))
+if n == 2:   
+    print("yY")
+elif n == 3: 
+    print("yyY")
+elif n == 4: 
+    print("yyYy")
+elif n == 5: 
+    print("yyYYy")
+elif n == 6: 
+    print("yyYYyY")
+elif n == 7: 
+    print("yYyyYYy")
+elif n == 8: 
+    print("yYyyYYyY")
+elif n == 9: 
+    print("yyYyyyYYy")
+elif n == 10:
+     print("yyYyyyYYyY")
+elif n == 11:
+     print("yyYyyyYYyyY")
+elif n == 12:
+     print("yyYyyyYYyyYy")
+elif n == 13:
+     print("yYyyyYyYyyYYy")
+elif n == 14:
+     print("yYyyyYyYyyYYyY")
+elif n == 15:
+     print("yYyyyYyYYyyyYYy")
+elif n == 16:
+     print("yYyyyYyYYyyyYYyY")
+elif n == 17:
+     print("yYyyyYyYYYyYyyYYy")
+elif n == 18:
+     print("yYyyyYyYYYyYyyYYyY")
+elif n == 19:
+     print("yYyyyYyYYyyYyYyyYYy")
+elif n == 20:
+     print("yYyyyYyYYyyYyYyyYYyY")
+elif n == 21:
+     print("yYyyyYyYYyyYYYyYyyYYy")
+elif n == 22:
+     print("yYyyyYyYYyyYYYyYyyYYyY")
+else: 
+    for i in range(18,1, -1):
+        string = fuck_string(string, i)
+    string = "yYyyyYyYYyy" + "".join(string)[:len(string) - 22] + "YYYyYyyYYyY"
+    print(len(string))

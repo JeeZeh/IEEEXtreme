@@ -7,11 +7,11 @@ def findBalance(y):
         return True
     return False
 
-for k in (range(2,100,2)):
+for k in (range(18,100,2)):
     o = []
     for i in product('yY', repeat=k):
         t = 0
-        for j in (i[n:m] for n in range(len(i)) for m in range(n + 2, len(i) + 1)):
+        for j in (i[n:m] for n in range(len(i)) for m in range(n + 2, len(i) + 1, 2)):
             if not findBalance(j):
                 t += 1
         o.append([''.join(i),t])
